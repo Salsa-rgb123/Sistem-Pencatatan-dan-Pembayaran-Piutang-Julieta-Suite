@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5fb">
+  <title>Julieta Suite | Studio Keuangan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Julieta Suite dashboard">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M22.2 22.9C17 13.4 6.8 9.5 5 16.1c-1.4 5.3 5.2 11.6 15.9 9.7C12.1 27.2 8.3 37.5 14.7 39.3c5.2 1.4 10.3-5.8 9.3-15.1 1 9.3 8.1 16.5 13.3 15.1 6.4-1.8 2.6-12.1-6.2-13.5 10.7 1.9 17.3-4.4 15.9-9.7-1.8-6.6-12-2.7-17.2 6.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 22.5c-1.9-3.1-1.9-6.1 0-9.1 1.9 3 1.9 6 0 9.1Zm0 2.4c1.9-3.1 1.9-6.1 0-9.1-1.9 3-1.9 6 0 9.1Z" fill="currentColor"/><path d="M24 23.5v2.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-copy"><strong>julieta suite</strong><small>EVENT STUDIO</small></span>
+      </a>
+      <div class="nav-caption">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Navigasi utama">
+        <button class="nav-link active" data-view="dashboard"><span class="nav-icon">⌂</span><span>Ringkasan</span></button>
+        <button class="nav-link" data-view="clients"><span class="nav-icon">♧</span><span>Klien</span></button>
+        <button class="nav-link" data-view="events"><span class="nav-icon">✳</span><span>Event</span></button>
+        <button class="nav-link" data-view="receivables"><span class="nav-icon">▤</span><span>Piutang</span><span class="nav-count" id="nav-receivables">0</span></button>
+        <button class="nav-link" data-view="deposits"><span class="nav-icon">◷</span><span>Smart deposit</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="note-flower">✿</span><p>Setiap detail kecil membuat momen besar terasa istimewa.</p></div>
+        <div class="profile"><div class="avatar">JS</div><div><strong id="admin-name">Julieta</strong><small>Administrator</small></div><button class="profile-more" data-action="edit-admin-name" aria-label="Ubah nama admin" title="Ubah nama admin">✎</button></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Buka navigasi">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-divider">/</span><strong id="current-section">Ringkasan</strong></div>
+        <div class="top-actions"><span class="today-label" id="today-label"></span><span class="top-divider"></span><button class="notification-button" aria-label="Notifikasi">♧<i></i></button><div class="top-avatar">JS</div></div>
+      </header>
+      <section class="page-content" id="page-content" aria-live="polite"></section>
+    </main>
+  </div>
+  <div class="modal-layer" id="modal-layer" hidden></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
