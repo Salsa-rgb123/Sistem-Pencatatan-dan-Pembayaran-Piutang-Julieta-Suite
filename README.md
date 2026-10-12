@@ -1,35 +1,37 @@
-# Bagaskara Laundry
+# Julieta Suite
 
-Sistem informasi dan akuntansi laundry yang membantu proses pengelolaan transaksi, pelanggan, pembayaran, dan laporan keuangan secara lebih terstruktur dan efisien.
+Julieta Suite adalah aplikasi manajemen studio event berbasis web yang dirancang untuk membantu pengelolaan data klien, jadwal acara, invoice, piutang, serta pembayaran deposit secara lebih terstruktur dan efisien. Sistem ini menyediakan dashboard ringkasan untuk memantau event aktif, status pembayaran, dan perkembangan keuangan studio secara real-time.
 
 ## Demo Aplikasi
 
-Demo: https://link-demo-aplikasi-anda.com
+Demo: https://salsa-rgb123.github.io/Sistem-Pencatatan-dan-Pembayaran-Piutang-Julieta-Suite/ 
 
 ## Fitur Utama
 
-- Manajemen data pelanggan
-- Proses transaksi laundry
-- Pengelolaan pembayaran
-- Laporan pendapatan dan status transaksi
-- Antarmuka sederhana dan mudah digunakan
+- Manajemen data klien
+- Pendaftaran dan pengelolaan event
+- Pembuatan invoice dan piutang
+- Pengelolaan smart deposit dan jadwal pembayaran
+- Dashboard ringkasan untuk monitoring status keuangan dan event
+- Update status secara dinamis melalui antarmuka aplikasi
 
 ## Teknologi
 
 - Frontend: HTML, CSS, JavaScript
-- Backend: Node.js / JavaScript
+- Backend: Deno + Supabase REST API
 - Database: Supabase
 
 ## Struktur Project
 
-- `backend/` - logic server dan konfigurasi backend
-- `frontend/` - antarmuka aplikasi
+- `backend/` - API backend dan koneksi ke Supabase
+- `frontend/` - antarmuka pengguna aplikasi
 
 ## Cara Menjalankan
 
-1. Buka folder backend lalu jalankan server aplikasi.
-2. Buka folder frontend untuk mengakses halaman aplikasi.
-3. Pastikan koneksi database sudah aktif dan konfigurasi terhubung dengan benar.
+1. Pastikan environment dan koneksi Supabase sudah aktif.
+2. Jalankan backend di folder `backend/`.
+3. Buka folder `frontend/` dan akses aplikasi melalui browser.
+4. Pastikan API key dan konfigurasi database sudah sesuai.
 
 ## Catatan
 
