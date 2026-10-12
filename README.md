@@ -32,7 +32,3 @@ Demo: https://salsa-rgb123.github.io/Sistem-Pencatatan-dan-Pembayaran-Piutang-Ju
 2. Jalankan backend di folder `backend/`.
 3. Buka folder `frontend/` dan akses aplikasi melalui browser.
 4. Pastikan API key dan konfigurasi database sudah sesuai.
-
-## Catatan
-
-Silakan mengganti link demo di atas dengan URL aplikasi yang sudah di-deploy agar dosen dapat langsung mencoba sistem yang dibuat.
